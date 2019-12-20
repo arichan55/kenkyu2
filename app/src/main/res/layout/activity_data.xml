@@ -6,268 +6,604 @@
     android:layout_height="match_parent"
     tools:context=".DataActivity">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="500dp"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView037"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="252dp"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginLeft="244dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView042"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="900dp"
+                android:layout_marginLeft="900dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="372dp"
-        android:layout_marginLeft="372dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView034"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="776dp"
+                android:layout_marginLeft="776dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="320dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView040"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="644dp"
+                android:layout_marginLeft="644dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="768dp"
-        android:layout_marginLeft="768dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView035"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="900dp"
+                android:layout_marginLeft="900dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="636dp"
-        android:layout_marginLeft="636dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView030"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="252dp"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="892dp"
-        android:layout_marginLeft="892dp"
-        android:layout_marginTop="316dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView031"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="636dp"
-        android:layout_marginLeft="636dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView038"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="500dp"
-        android:layout_marginLeft="500dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView032"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="508dp"
+                android:layout_marginLeft="508dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="892dp"
-        android:layout_marginLeft="892dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView041"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="776dp"
+                android:layout_marginLeft="776dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginLeft="244dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView029"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="552dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="164dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView033"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="644dp"
+                android:layout_marginLeft="644dp"
+                android:layout_marginTop="548dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="768dp"
-        android:layout_marginLeft="768dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView036"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="100dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="372dp"
-        android:layout_marginLeft="372dp"
-        android:layout_marginTop="160dp"
-        android:textSize="70sp"
-        android:verticalScrollbarPosition="defaultPosition"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView039"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="508dp"
+                android:layout_marginLeft="508dp"
+                android:layout_marginTop="660dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/redata"
-        android:layout_width="220dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="1044dp"
-        android:layout_marginLeft="1044dp"
-        android:layout_marginTop="16dp"
-        android:text="ホームへ"
-        android:textSize="50sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView023"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="252dp"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/s"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="60dp"
-        android:text="サーブ"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView028"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="900dp"
+                android:layout_marginLeft="900dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/sr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="204dp"
-        android:layout_marginLeft="204dp"
-        android:layout_marginTop="60dp"
-        android:text="サーブR"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView020"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="776dp"
+                android:layout_marginLeft="776dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="348dp"
-        android:layout_marginLeft="348dp"
-        android:layout_marginTop="60dp"
-        android:text="スパイク"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView026"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="644dp"
+                android:layout_marginLeft="644dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/bc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="488dp"
-        android:layout_marginLeft="488dp"
-        android:layout_marginTop="60dp"
-        android:text="Bカバー"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView021"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="900dp"
+                android:layout_marginLeft="900dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/spc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="704dp"
-        android:layout_marginLeft="704dp"
-        android:layout_marginTop="60dp"
-        android:text="スパイクR"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView016"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="252dp"
+                android:layout_marginLeft="252dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/fc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="880dp"
-        android:layout_marginLeft="880dp"
-        android:layout_marginTop="60dp"
-        android:text="Fカバー"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView017"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/b"
-        android:layout_width="69dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="636dp"
-        android:layout_marginLeft="636dp"
-        android:layout_marginTop="60dp"
-        android:text="B"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView024"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="380dp"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView018"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="508dp"
+                android:layout_marginLeft="508dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView027"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="776dp"
+                android:layout_marginLeft="776dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView015"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="340dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView019"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="644dp"
+                android:layout_marginLeft="644dp"
+                android:layout_marginTop="336dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView022"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView025"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="508dp"
+                android:layout_marginLeft="508dp"
+                android:layout_marginTop="448dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView014"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="896dp"
+                android:layout_marginLeft="896dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView009"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView011"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="504dp"
+                android:layout_marginLeft="504dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView013"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="772dp"
+                android:layout_marginLeft="772dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView008"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView012"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="640dp"
+                android:layout_marginLeft="640dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView010"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="376dp"
+                android:layout_marginLeft="376dp"
+                android:layout_marginTop="236dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView006"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="772dp"
+                android:layout_marginLeft="772dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView002"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginLeft="248dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView007"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="896dp"
+                android:layout_marginLeft="896dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView003"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="376dp"
+                android:layout_marginLeft="376dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView004"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="504dp"
+                android:layout_marginLeft="504dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView001"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="128dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView005"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="640dp"
+                android:layout_marginLeft="640dp"
+                android:layout_marginTop="124dp"
+                android:textSize="70sp"
+                android:verticalScrollbarPosition="defaultPosition"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/redata"
+                android:layout_width="188dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="1024dp"
+                android:layout_marginLeft="1024dp"
+                android:layout_marginTop="24dp"
+                android:text="ホームへ"
+                android:textSize="50sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="60dp"
+                android:text="サーブ"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="204dp"
+                android:layout_marginLeft="204dp"
+                android:layout_marginTop="60dp"
+                android:text="サーブR"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="348dp"
+                android:layout_marginLeft="348dp"
+                android:layout_marginTop="60dp"
+                android:text="スパイク"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="488dp"
+                android:layout_marginLeft="488dp"
+                android:layout_marginTop="60dp"
+                android:text="Bカバー"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/spc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="704dp"
+                android:layout_marginLeft="704dp"
+                android:layout_marginTop="60dp"
+                android:text="スパイクR"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="880dp"
+                android:layout_marginLeft="880dp"
+                android:layout_marginTop="60dp"
+                android:text="Fカバー"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="69dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="636dp"
+                android:layout_marginLeft="636dp"
+                android:layout_marginTop="60dp"
+                android:text="B"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

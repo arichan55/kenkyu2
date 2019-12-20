@@ -210,7 +210,54 @@ public class MainActivity extends AppCompatActivity {
             hozon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    hantei2[0] = true;
+                    //hantei[2] = true;
+                    Intent intent = new Intent();
+                    intent.putExtra("ser1", text.getText().toString());
+                    intent.putExtra("serR1", text2.getText().toString());
+                    intent.putExtra("sp1", text3.getText().toString());
+                    intent.putExtra("bC1", text4.getText().toString());
+                    intent.putExtra("b1", text5.getText().toString());
+                    intent.putExtra("spR1", text6.getText().toString());
+                    intent.putExtra("fC1", text7.getText().toString());
+                    intent.putExtra("ser2", text8.getText().toString());
+                    intent.putExtra("serR2", text9.getText().toString());
+                    intent.putExtra("sp2", text10.getText().toString());
+                    intent.putExtra("bC2", text11.getText().toString());
+                    intent.putExtra("b2", text12.getText().toString());
+                    intent.putExtra("spR2", text13.getText().toString());
+                    intent.putExtra("fC2", text14.getText().toString());
+                    intent.putExtra("ser3", text15.getText().toString());
+                    intent.putExtra("serR3", text16.getText().toString());
+                    intent.putExtra("sp3", text17.getText().toString());
+                    intent.putExtra("bC3", text18.getText().toString());
+                    intent.putExtra("b3", text19.getText().toString());
+                    intent.putExtra("spR3", text20.getText().toString());
+                    intent.putExtra("fC3", text21.getText().toString());
+                    intent.putExtra("ser4", text22.getText().toString());
+                    intent.putExtra("serR4", text23.getText().toString());
+                    intent.putExtra("sp4", text24.getText().toString());
+                    intent.putExtra("bC4", text25.getText().toString());
+                    intent.putExtra("b4", text26.getText().toString());
+                    intent.putExtra("spR4", text27.getText().toString());
+                    intent.putExtra("fC4", text28.getText().toString());
+                    intent.putExtra("ser5", text29.getText().toString());
+                    intent.putExtra("serR5", text30.getText().toString());
+                    intent.putExtra("sp5", text31.getText().toString());
+                    intent.putExtra("bC5", text32.getText().toString());
+                    intent.putExtra("b5", text33.getText().toString());
+                    intent.putExtra("spR5", text34.getText().toString());
+                    intent.putExtra("fC5", text35.getText().toString());
+                    intent.putExtra("ser6", text36.getText().toString());
+                    intent.putExtra("serR6", text37.getText().toString());
+                    intent.putExtra("sp6", text38.getText().toString());
+                    intent.putExtra("bC6", text39.getText().toString());
+                    intent.putExtra("b6", text40.getText().toString());
+                    intent.putExtra("spR6", text41.getText().toString());
+                    intent.putExtra("fC6", text42.getText().toString());
+                        setResult(RESULT_OK, intent);
+
+
+                    finish();
                 }
             });
 
@@ -2772,7 +2819,7 @@ public class MainActivity extends AppCompatActivity {
                         myApp.setTestString(a6);
                         myApp.setTestString(a7);*/
 
-                        Intent intent = new Intent();
+                        /*Intent intent = new Intent();
                         intent.putExtra("ser1", text.getText().toString());
                         intent.putExtra("serR1", text7.getText().toString());
                         intent.putExtra("sp1", text13.getText().toString());
@@ -2780,14 +2827,14 @@ public class MainActivity extends AppCompatActivity {
                         intent.putExtra("b1", text25.getText().toString());
                         intent.putExtra("spR1", text31.getText().toString());
                         intent.putExtra("fC1", text37.getText().toString());
-                        /*data.putExtra("ser2", text2.getText().toString());
-                        data.putExtra("serR2", text8.getText().toString());
-                        data.putExtra("sp2", text14.getText().toString());
-                        data.putExtra("bC2", text20.getText().toString());
-                        data.putExtra("b2", text26.getText().toString());
-                        data.putExtra("spR2", text32.getText().toString());
-                        data.putExtra("fC2", text38.getText().toString());*/
-                        setResult(RESULT_OK, intent);
+                        intent.putExtra("ser2", text2.getText().toString());
+                        intent.putExtra("serR2", text8.getText().toString());
+                        intent.putExtra("sp2", text14.getText().toString());
+                        intent.putExtra("bC2", text20.getText().toString());
+                        intent.putExtra("b2", text26.getText().toString());
+                        intent.putExtra("spR2", text32.getText().toString());
+                        intent.putExtra("fC2", text38.getText().toString());
+                        setResult(RESULT_OK, intent);*/
 
                     }
                     finish();
