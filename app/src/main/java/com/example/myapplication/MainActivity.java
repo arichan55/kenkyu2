@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         // android.R.Layout.simple_spinner_dropdown_itemをR.layout.spinner_dropdown_itemに変更
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
 
-            select1 = (Spinner) findViewById(R.id.spinner1);
-            select3 = (Spinner) findViewById(R.id.spinner2);
-            select4 = (Spinner) findViewById(R.id.spinner3);
-            select5 = (Spinner) findViewById(R.id.spinner4);
-            select6 = (Spinner) findViewById(R.id.spinner5);
-            select2 = (Spinner) findViewById(R.id.spinner6);
+            select1 = findViewById(R.id.spinner1);
+            select3 = findViewById(R.id.spinner2);
+            select4 = findViewById(R.id.spinner3);
+            select5 = findViewById(R.id.spinner4);
+            select6 = findViewById(R.id.spinner5);
+            select2 = findViewById(R.id.spinner6);
             select1.setAdapter(adapter);
             select2.setAdapter(adapter);
             select3.setAdapter(adapter);
@@ -2748,38 +2748,46 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-        dataStore = getSharedPreferences("DataStore", MODE_PRIVATE);
-        myApp = (MyApp)this.getApplication();
+        //dataStore = getSharedPreferences("DataStore", MODE_PRIVATE);
+        //myApp = (MyApp)this.getApplication();
 
             menu.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if (hantei2[0]) {
-                        String a1 = text.getText().toString();
-                        /*String a2 = text7.getText().toString();
+                        /*String a1 = text.getText().toString();
+                        String a2 = text7.getText().toString();
                         String a3 = text13.getText().toString();
                         String a4 = text19.getText().toString();
                         String a5 = text25.getText().toString();
                         String a6 = text31.getText().toString();
-                        String a7 = text37.getText().toString();*/
+                        String a7 = text37.getText().toString();
+
 
                         myApp.setTestString(a1);
-                        /*Intent data = new Intent();
-                        data.putExtra("ser1", text.getText().toString());
-                        data.putExtra("serR1", text7.getText().toString());
-                        data.putExtra("sp1", text13.getText().toString());
-                        data.putExtra("bC1", text19.getText().toString());
-                        data.putExtra("b1", text25.getText().toString());
-                        data.putExtra("spR1", text31.getText().toString());
-                        data.putExtra("fC1", text37.getText().toString());
-                        data.putExtra("ser2", text2.getText().toString());
+                        myApp.setTestString(a2);
+                        myApp.setTestString(a3);
+                        myApp.setTestString(a4);
+                        myApp.setTestString(a5);
+                        myApp.setTestString(a6);
+                        myApp.setTestString(a7);*/
+
+                        Intent intent = new Intent();
+                        intent.putExtra("ser1", text.getText().toString());
+                        intent.putExtra("serR1", text7.getText().toString());
+                        intent.putExtra("sp1", text13.getText().toString());
+                        intent.putExtra("bC1", text19.getText().toString());
+                        intent.putExtra("b1", text25.getText().toString());
+                        intent.putExtra("spR1", text31.getText().toString());
+                        intent.putExtra("fC1", text37.getText().toString());
+                        /*data.putExtra("ser2", text2.getText().toString());
                         data.putExtra("serR2", text8.getText().toString());
                         data.putExtra("sp2", text14.getText().toString());
                         data.putExtra("bC2", text20.getText().toString());
                         data.putExtra("b2", text26.getText().toString());
                         data.putExtra("spR2", text32.getText().toString());
-                        data.putExtra("fC2", text38.getText().toString());
-                        setResult(RESULT_OK, data);*/
+                        data.putExtra("fC2", text38.getText().toString());*/
+                        setResult(RESULT_OK, intent);
 
                     }
                     finish();

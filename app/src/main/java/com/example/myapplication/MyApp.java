@@ -4,18 +4,18 @@ import android.app.Application;
 
 public class MyApp extends Application {
 
-    private String testString = "default";
+    private int testString = 0;
 
     @Override
     public void onCreate() {
         super.onCreate();
     }
 
-    public String getTestString() {
+    public int getTestString() {
         return testString;
     }
 
-    public void setTestString(String str) {
+    public void setTestString(int str) {
         testString = str;
     }
 }
