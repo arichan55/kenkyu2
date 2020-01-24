@@ -34,8 +34,11 @@
         android:id="@+id/button2"
         android:layout_width="165dp"
         android:layout_height="128dp"
+        android:layout_marginStart="980dp"
+        android:layout_marginLeft="980dp"
+        android:layout_marginTop="660dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="989dp"
-        tools:layout_editor_absoluteY="652dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

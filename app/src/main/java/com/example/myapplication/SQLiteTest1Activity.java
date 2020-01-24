@@ -160,7 +160,7 @@ public class SQLiteTest1Activity extends Activity
     }
 
 
-    private class NoteListAdapter extends BaseAdapter {
+    class NoteListAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {

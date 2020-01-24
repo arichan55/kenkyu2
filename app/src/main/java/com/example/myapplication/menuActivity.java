@@ -1,14 +1,38 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.content.Intent;
+import android.view.ContextMenu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class menuActivity extends AppCompatActivity{
 
+    static final String TAG = "SQLiteTest1";
+    static final int MENUITEM_ID_DELETE = 1;
+    ListView itemListView;
+    EditText noteEditText;
+    Button  saveButton;
+    static DBAdapter dbAdapter;
+    static SQLiteTest1Activity.NoteListAdapter listAdapter;
+    static List<Note> noteList = new ArrayList<Note>();
+
+    AlertDialog mAlertDlg;
     private MyApp myApp;
     int x=0;
     private static final int REQUEST_CODE = 1000;
@@ -25,17 +49,52 @@ public class menuActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        myApp = (MyApp)this.getApplication();
+        final Button score = findViewById(R.id.score);
+        final Button data = findViewById(R.id.data);
+        final Button kari = findViewById(R.id.button2);
+        final EditText nitiji = new EditText(this);
+        final EditText aite = new EditText(this);
 
-        Button score = findViewById(R.id.score);
-        Button data = findViewById(R.id.data);
-        Button kari = findViewById(R.id.button2);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // ダイアログタイトル、表示メッセージ、ボタンを設定
+        builder.setTitle(R.string.dlg_title);
+        builder.setMessage(R.string.dlg_msg1);
+        builder.setView(nitiji);
+        builder.setMessage(R.string.dlg_msg2);
+        builder.setView(aite);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                // OK ボタンクリック処理
+                final String text1  = nitiji.getText().toString();
+                final String text2 = aite.getText().toString();
+                String text = text1 + text2;
+                try{
+                    String str = "";
+                    FileOutputStream out = openFileOutput(text,MODE_PRIVATE);
+                    out.write(str.getBytes());
+                }catch(IOException e) {
+                    e.printStackTrace();
+                }
+                saveItem();
+                Intent intent = new Intent(getApplication(), MainActivity.class);
+                startActivityForResult(intent, REQUEST_CODE);
+            }
+                });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                    // Cancel ボタンクリック処理
+                    Toast.makeText(menuActivity.this,
+                            "Cancel Click", Toast.LENGTH_SHORT).show();
+                }
+            });
+        mAlertDlg = builder.create();
 
         score.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplication(), MainActivity.class);
-                startActivityForResult(intent, REQUEST_CODE);
+                //Intent intent = new Intent(getApplication(), MainActivity.class);
+                //startActivityForResult(intent, REQUEST_CODE);
+                mAlertDlg.show();
                 //startActivity(intent);
             }
         });
@@ -99,6 +158,59 @@ public class menuActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+    }
+
+    protected void findViews(){
+        itemListView = (ListView)findViewById(R.id.itemListView);
+        noteEditText = (EditText)findViewById(R.id.memoEditText);
+        saveButton = (Button)findViewById(R.id.saveButton);
+    }
+
+    protected void loadNote(){
+        noteList.clear();
+
+        // Read
+        dbAdapter.open();
+        Cursor c = dbAdapter.getAllNotes();
+
+        startManagingCursor(c);
+
+        if(c.moveToFirst()){
+            do {
+                Note note = new Note(
+                        c.getInt(c.getColumnIndex(DBAdapter.COL_ID)),
+                        c.getString(c.getColumnIndex(DBAdapter.COL_NOTE)),
+                        c.getString(c.getColumnIndex(DBAdapter.COL_LASTUPDATE))
+                );
+                noteList.add(note);
+            } while(c.moveToNext());
+        }
+
+        stopManagingCursor(c);
+        dbAdapter.close();
+
+        listAdapter.notifyDataSetChanged();
+    }
+    protected void saveItem(){
+        dbAdapter.open();
+        dbAdapter.saveNote(noteEditText.getText().toString());
+        dbAdapter.close();
+        noteEditText.setText("");
+        loadNote();
+    }
+    protected void setListeners(){
+        saveButton.setOnClickListener((View.OnClickListener) this);
+
+        itemListView.setOnCreateContextMenuListener(
+                new View.OnCreateContextMenuListener(){
+                    @Override
+                    public void onCreateContextMenu(
+                            ContextMenu menu,
+                            View v,
+                            ContextMenu.ContextMenuInfo menuInfo) {
+                        menu.add(0, MENUITEM_ID_DELETE, 0, "Delete");
+                    }
+                });
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
