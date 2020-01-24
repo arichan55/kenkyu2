@@ -29,6 +29,7 @@ public class menuActivity extends AppCompatActivity{
 
         Button score = findViewById(R.id.score);
         Button data = findViewById(R.id.data);
+        Button kari = findViewById(R.id.button2);
 
         score.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +37,14 @@ public class menuActivity extends AppCompatActivity{
                 Intent intent = new Intent(getApplication(), MainActivity.class);
                 startActivityForResult(intent, REQUEST_CODE);
                 //startActivity(intent);
+            }
+        });
+
+        kari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplication(), SQLiteTest1Activity.class);
+                startActivity(intent);
             }
         });
 
