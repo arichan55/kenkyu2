@@ -3,14 +3,17 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.content.Intent;
+import android.text.InputType;
 import android.view.ContextMenu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +23,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import android.content.Context;
+import android.view.ContextMenu;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.ViewGroup;
+import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnClickListener;
+import android.view.View.OnCreateContextMenuListener;
+import android.view.View.OnLongClickListener;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 
 public class menuActivity extends AppCompatActivity{
 
@@ -44,6 +59,13 @@ public class menuActivity extends AppCompatActivity{
     String e1="0",e2="0",e3="0",e4="0",e5="0",e6="0",e7="0";
     String f1="0",f2="0",f3="0",f4="0",f5="0",f6="0",f7="0";
 
+    private EditText editText1;
+    private EditText editText2;
+    private String   sBefLogin;
+    private String   sBefPswd;
+
+    private final static int WC=LinearLayout.LayoutParams.WRAP_CONTENT;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,14 +76,24 @@ public class menuActivity extends AppCompatActivity{
         final Button kari = findViewById(R.id.button2);
         final EditText nitiji = new EditText(this);
         final EditText aite = new EditText(this);
+/*
+        //レイアウトの生成
+        LinearLayout layout=new LinearLayout(this);
+        //上から下にオブジェクトを配置するよう設定
+        layout.setOrientation(LinearLayout.VERTICAL);
+        //画面表示の設定
+        setContentView(layout);
+        //ボタンを画面に追加する
+        layout.addView(makeButton("ダイアログ", 0));*/
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final AlertDialog.Builder builder2 = new AlertDialog.Builder(this);
         // ダイアログタイトル、表示メッセージ、ボタンを設定
         builder.setTitle(R.string.dlg_title);
         builder.setMessage(R.string.dlg_msg1);
         builder.setView(nitiji);
-        builder.setMessage(R.string.dlg_msg2);
-        builder.setView(aite);
+        builder2.setMessage(R.string.dlg_msg2);
+        builder2.setView(aite);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 // OK ボタンクリック処理
@@ -75,7 +107,7 @@ public class menuActivity extends AppCompatActivity{
                 }catch(IOException e) {
                     e.printStackTrace();
                 }
-                saveItem();
+                //saveItem();
                 Intent intent = new Intent(getApplication(), MainActivity.class);
                 startActivityForResult(intent, REQUEST_CODE);
             }
@@ -89,12 +121,15 @@ public class menuActivity extends AppCompatActivity{
             });
         mAlertDlg = builder.create();
 
+
+
         score.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Intent intent = new Intent(getApplication(), MainActivity.class);
                 //startActivityForResult(intent, REQUEST_CODE);
                 mAlertDlg.show();
+                //showDialog(0);
                 //startActivity(intent);
             }
         });
@@ -285,4 +320,84 @@ public class menuActivity extends AppCompatActivity{
             }
         }*/
     }
+
+    /*
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        switch (id) {
+            case 0:
+                //エディットテキストの生成
+                editText1 = new EditText(getApplicationContext());
+                editText2 = new EditText(getApplicationContext());
+
+                //外枠とパーツの作成
+                LinearLayout layout = new LinearLayout(getApplicationContext());
+                //上から下にパーツを組み込む設定
+                layout.setOrientation(LinearLayout.VERTICAL);
+
+                //外枠にパーツを組み込む
+                layout.addView(make_TextView("ログイン"), new LinearLayout.LayoutParams( 300, 40));
+                layout.addView(editText1, new LinearLayout.LayoutParams( 300,70));
+                layout.addView(make_TextView("パスワード"), new LinearLayout.LayoutParams( 300, 40));
+                layout.addView(editText2, new LinearLayout.LayoutParams( 300,70));
+
+                //レイアウトをダイアログに設定
+                dialog.setView(layout);
+
+                //タイトルの設定
+                dialog.setTitle("タイトル");
+
+                //エディットボックスの入力タイプの設定
+                editText1.setInputType( InputType.TYPE_CLASS_TEXT );
+                editText2.setInputType( InputType.TYPE_CLASS_TEXT |                    InputType.TYPE_TEXT_VARIATION_PASSWORD);
+
+                //過去の入力内容が表示されるようにする
+                editText1.setText(sBefLogin);
+                editText2.setText(sBefPswd);
+
+                // dialogOKボタン
+                dialog.setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        sBefLogin= editText1.getText().toString();
+                        sBefPswd = editText2.getText().toString();
+                        Toast.makeText(getApplicationContext(), editText1.getText().toString(),                Toast.LENGTH_SHORT).show();
+                // ダイアログを消す
+                        removeDialog(0);
+                    }
+                });
+                // dialogキャンセルボタン
+                dialog.setNegativeButton("キャンセル",new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                break;
+        }
+        return dialog.create();
+    }
+
+    //ボタンを作成します
+    private Button makeButton(String sText,int id) {
+        Button button=new Button(this);
+        //ボタンの表示テキストの設定
+        button.setText(sText);
+        //ボタンのIDの割り振り
+        button.setId(id);
+        //クリックリスナーの実装
+        button.setOnClickListener(this);
+        //ボタンの表示方法の設定
+        button.setLayoutParams(new LinearLayout.LayoutParams(WC,WC));
+        return button;
+    }
+
+    private TextView make_TextView(String sMessage){
+        //テキストビューの生成
+        TextView tv = new TextView(getApplicationContext());
+        //メッセージの設定
+        tv.setText(sMessage);
+        return tv;
+    }*/
 }

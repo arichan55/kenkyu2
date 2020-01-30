@@ -19,7 +19,7 @@
         <item>12</item>
     </string-array>
     <string name="btn_exe">実行</string>
-    <string name="dlg_title">実行確認</string>
+    <string name="dlg_title">ファイル作成</string>
     <string name="dlg_msg1">日時</string>
     <string name="dlg_msg2">対戦校</string>
 </resources>
